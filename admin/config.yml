@@ -1,0 +1,35 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "pages"
+    label: "Pagine"
+    folder: "/"
+    create: true
+    slug: "{{slug}}"
+    extension: "html"
+    format: "frontmatter"
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Descrizione", name: "description", widget: "text"}
+      - {label: "Contenuto", name: "body", widget: "markdown"}
+      - {label: "Data Pubblicazione", name: "date", widget: "datetime"}
+  
+  - name: "blog"
+    label: "Articoli Blog"
+    folder: "blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    extension: "html"
+    format: "frontmatter"
+    fields:
+      - {label: "Titolo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Categoria", name: "category", widget: "select", options: ["Gattismo", "Dudeismo", "Satanismo LaVeyano", "Riflessioni", "Pratiche"]}
+      - {label: "Descrizione Breve", name: "excerpt", widget: "text"}
+      - {label: "Immagine", name: "image", widget: "image", required: false}
+      - {label: "Contenuto", name: "body", widget: "markdown"}

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiesa della Contemplazione Autonoma - Osserva, Accogli, Proteggi</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Chiesa della Contemplazione Autonoma: filosofia di vita che unisce Gattismo, Dudeismo e Satanismo LaVeyano per vivere con saggezza, serenità e autonomia contemplativa.">
+    <meta name="keywords" content="contemplazione autonoma, gattismo, dudeismo, filosofia felina, mindfulness, satanismo lavey, meditazione, vita contemplativa, benessere mentale">
+    <meta name="author" content="Chiesa della Contemplazione Autonoma">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Chiesa della Contemplazione Autonoma">
+    <meta property="og:description" content="Filosofia di vita contemplativa: Gattismo, Dudeismo e autodifesa consapevole per un'esistenza autonoma e autentica.">
+    <meta property="og:image" content="https://i.imgur.com/xfA64gs.png">
+    <meta property="og:url" content="https://benevolent-starburst-aacb2d.netlify.app">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chiesa della Contemplazione Autonoma">
+    <meta name="twitter:description" content="Filosofia contemplativa moderna: Gattismo, Dudeismo e autodifesa consapevole">
+    <meta name="twitter:image" content="https://i.imgur.com/xfA64gs.png">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Chiesa della Contemplazione Autonoma",
+        "description": "Filosofia contemplativa che integra Gattismo, Dudeismo e principi di autodifesa consapevole",
+        "url": "https://benevolent-starburst-aacb2d.netlify.app",
+        "logo": "https://i.imgur.com/xfA64gs.png",
+        "slogan": "Osserva, Accogli, Proteggi"
+    }
+    </script>
+
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+        }
+
+        .container {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        nav li {
+            margin: 0 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            display: block;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: -2rem -2rem 3rem -2rem;
+            border-radius: 0 0 20px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #5a6c7d;
+        }
+
+        section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            margin: 0.5rem auto;
+            border-radius: 2px;
+        }
+
+        section h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin: 2rem 0 1rem 0;
+            border-left: 4px solid #3498db;
+            padding-left: 1rem;
+        }
+
+        .manifesto-intro {
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            border-left: 4px solid #667eea;
+        }
+
+        .principles {
+            background: linear-gradient(135deg, #2ecc7120, #27ae6020);
+            border-left: 4px solid #2ecc71;
+        }
+
+        .commitment {
+            background: linear-gradient(135deg, #f39c1220, #e67e2220);
+            border-left: 4px solid #f39c12;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            color: white;
+        }
+
+        .cta h2::after {
+            background: white;
+        }
+
+        .cta h3 {
+            color: white;
+            border-left-color: white;
+        }
+
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .pillar {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-top: 4px solid;
+        }
+
+        .pillar:hover {
+            transform: translateY(-5px);
+        }
+
+        .pillar.quiete {
+            border-top-color: #3498db;
+        }
+
+        .pillar.serenita {
+            border-top-color: #2ecc71;
+        }
+
+        .pillar.forza {
+            border-top-color: #f39c12;
+        }
+
+        .pillar-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+
+        .pillar-icon img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .pillar h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+            border: none;
+            padding: 0;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea20, #fed6e320);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(52, 73, 94, 0.05);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #3498db;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            opacity: 0.3;
+        }
+
+        .cta .quote {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        ul {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+        }
+
+        .back-to-top:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .header-text {
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav li {
+                margin: 0.2rem 0;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            .pillars {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            .hero {
+                margin: -1rem -1rem 2rem -1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://i.imgur.com/xfA64gs.png" alt="Logo Chiesa della Contemplazione Autonoma" />
+                </div>
+                <div class="header-text">
+                    <h1>Chiesa della Contemplazione Autonoma</h1>
+                    <p class="subtitle">Osserva, Accogli, Proteggi</p>
+                </div>
+            </div>
+        </header>
+
+         <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="gattismo.html">Il Gattismo</a></li>
+                <li><a href="dudeismo.html">Il Dudeismo</a></li>
+                <li><a href="satanismo-intro.html">Satanismo LaVeyano</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="hero">
+                <h2>Una Filosofia di Vita Contemplativa</h2>
+                <p>Semplifichiamo il complesso, rispettiamo il semplice</p>
+            </div>
+
+            <section class="manifesto-intro">
+                <h2>Le Nostre Origini</h2>
+                <p>La Chiesa della Contemplazione Autonoma nasce da un intreccio armonioso di visioni antiche e moderne, unendo correnti di pensiero che celebrano l'autonomia, la serenità e la saggezza pratica.</p>
+                
+                <div class="pillars">
+                    <div class="pillar quiete">
+                        <div class="pillar-icon">
+                            <img src="https://i.imgur.com/byWGXq1.png" alt="Gattismo - Contemplazione e Quiete" />
+                        </div>
+                        <h3>Gattismo</h3>
+                        <p>La contemplazione strategica e l'efficienza energetica, che ci guida a osservare il mondo con la calma di un gatto, conservando le nostre energie per ciò che davvero conta.</p>
+                    </div>
+                    <div class="pillar serenita">
+                        <div class="pillar-icon">
+                            <img src="https://i.imgur.com/mT1nM1N.png" alt="Dudeismo - Serenità e Accoglienza" />
+                        </div>
+                        <h3>Dudeismo</h3>
+                        <p>La rilassata accettazione del presente, che ci invita a fluire con il caos della vita con un sorriso sereno, come un viandante che trova bellezza in ogni passo.</p>
+                    </div>
+                    <div class="pillar forza">
+                        <div class="pillar-icon">
+                            <img src="https://i.imgur.com/FnfN91j.png" alt="Individualismo Consapevole - Forza e Protezione" />
+                        </div>
+                        <h3>Individualismo Consapevole</h3>
+                        <p>L'individualismo consapevole del satanismo di LaVey, che ci insegna a proteggere il nostro spazio interiore con forza e a vivere secondo i nostri valori.</p>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <p>Un'eco dell'Induismo con la sua visione del dharma personale, che ci ricorda di seguire il nostro cammino unico, della non-dualità, che dissolve le opposizioni per vedere l'unità nel tutto, e dell'azione distaccata, che ci permette di agire senza essere schiavi dei risultati.</p>
+                </div>
+
+                <p>Da queste radici cresce un pensiero che unisce distacco contemplativo, accettazione serena e forza protettiva, offrendo un cammino per vivere in autonomia, con saggezza e leggerezza.</p>
+            </section>
+
+            <section>
+                <h2>Il Nostro Manifesto</h2>
+                <p>La Chiesa della Contemplazione Autonoma, conosciuta anche come Congrega della Contemplazione Autonoma, è una credenza di vita a metà tra il solenne e l'ironico, ma profondamente riflessiva. Al primo sguardo può sembrare un culto spirituale come tanti, con simboli e un linguaggio che richiama filosofie simboliche e contemplative. Ma a chi guarda con più attenzione, rivela un'ironia raffinata e una critica tagliente alla frenesia contemporanea.</p>
+
+                <div class="quote">
+                    Noi, membri della Chiesa della Contemplazione Autonoma, crediamo che la vita sia un'arte da vivere con saggezza, serenità e forza.
+                </div>
+
+                <p>Ispirati dalla calma efficiente del Gattismo, dalla leggerezza rilassata del Dudeismo e dall'individualismo assertivo del satanismo di LaVey, proponiamo un cammino che ci guida attraverso i fastidi del mondo con tre sguardi: quello della quiete, della serenità e della forza. Questo manifesto stabilisce i principi fondamentali che ci orientano verso una vita autonoma, contemplativa e appagante.</p>
+
+                <p>Scopri i pilastri su cui si fonda la nostra filosofia e impara a navigare la vita con saggezza e serenità.</p>
+            </section>
+
+            <section class="principles">
+                <h2>I Nostri Principi Fondamentali</h2>
+
+                <h3>🐱 Lo Sguardo della Quiete</h3>
+                <p>La vita è un flusso costante di eventi, ma non tutti meritano la tua completa attenzione o energia. Impara a osservare il mondo con distacco calmo, proprio come un gatto che guarda il tramonto da un punto elevato. Scegli con cura dove investire il tuo tempo e le tue emozioni. La quiete non è inattività, ma la tua prima e più efficace difesa contro le distrazioni e i fastidi minori. Considera il riposo non come una pausa, ma come un atto essenziale di saggezza.</p>
+
+                <h3>🚶‍♂️ Lo Sguardo della Serenità</h3>
+                <p>Il caos è una parte inevitabile dell'esistenza, ma non ha il potere di spezzarti. Affronta le difficoltà con leggerezza, come un viandante che cammina sotto la pioggia con un sorriso, trovando bellezza e pace nei momenti di calma che seguono la tempesta. La serenità ti permette di fluire con gli eventi della vita, accettandoli senza esserne travolto.</p>
+
+                <h3>🛡️ Lo Sguardo della Forza</h3>
+                <p>Il tuo benessere, i tuoi valori e la tua dignità sono un tempio sacro che merita protezione. Quando questi sono minacciati, agisci con determinazione calma e strategica. Difendi i tuoi confini con forza, ma senza aggressività inutile. Essere il custode della tua dignità significa non permettere a chi ti ferisce di minare il tuo spazio interiore.</p>
+
+                <h3>☕ La Ricerca della Pace Quotidiana</h3>
+                <p>La vita è costellata di piccole oasi di tranquillità: il calore di un raggio di sole, il piacere di un sorso di tè, la gioia di una risata condivisa. Cerca attivamente questi momenti di pace e trasformali in un'arte quotidiana. Celebra queste pause rigeneranti che nutrono il tuo spirito. La pace non è un lusso occasionale, ma una necessità vitale per chi sceglie di vivere in autonomia contemplativa.</p>
+
+                <h3>🎭 L'Autonomia del Ritmo Personale</h3>
+                <p>Non sei destinato a essere solo un ingranaggio nella grande macchina del mondo. Sei un essere autonomo con un ritmo interiore unico. Vivi secondo i tuoi bisogni autentici, cammina al tuo passo e non lasciare che le aspettative esterne ti spingano a correre quando il tuo spirito desidera passeggiare. Riconoscere e seguire il tuo ritmo è il cuore pulsante della tua libertà personale.</p>
+            </section>
+
+            <section class="commitment">
+                <h2>Il Nostro Impegno</h2>
+                <p>Noi, membri della Chiesa della Contemplazione Autonoma, ci impegniamo a vivere e promuovere questi principi:</p>
+                
+                <ul>
+                    <li><strong>Applicare la Scala dei Tre Sguardi:</strong> Utilizziamo lo Sguardo della Quiete per i piccoli inconvenienti, lo Sguardo della Serenità per le difficoltà moderate e lo Sguardo della Forza per le ingiustizie inaccettabili.</li>
+                    
+                    <li><strong>Praticare la Contemplazione:</strong> Integriamo la contemplazione nella vita quotidiana come atto di saggezza, bilanciando distacco, accettazione e azione consapevole.</li>
+                    
+                    <li><strong>Celebrare l'Autonomia:</strong> Onoriamo l'autonomia personale, incoraggiando ciascuno a vivere in modo autentico e a rispettare il proprio ritmo e quello degli altri.</li>
+                    
+                    <li><strong>Condividere e Supportare:</strong> Creiamo spazi accoglienti per condividere momenti di quiete, serenità e forza all'interno della nostra comunità, offrendo riflessione e supporto reciproco.</li>
+                </ul>
+            </section>
+
+            <section class="contact-form">
+                <h2>Contattaci</h2>
+                <p>Se risuona in te il desiderio di vivere con saggezza felina, serenità viandante e forza protettiva, ti invitiamo a scriverci. Condividi le tue riflessioni, domande o semplicemente presentati alla comunità.</p>
+                
+                <form name="contatto-cca" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contatto-cca" />
+                    <div style="display: none;">
+                        <input name="bot-field" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interesse">Il tuo interesse principale</label>
+                        <select id="interesse" name="interesse">
+                            <option value="">Seleziona...</option>
+                            <option value="gattismo">Gattismo e contemplazione felina</option>
+                            <option value="dudeismo">Dudeismo e accettazione serena</option>
+                            <option value="satanismo">Individualismo consapevole</option>
+                            <option value="generale">Filosofia CCA generale</option>
+                            <option value="community">Unirsi alla comunità</option>
+                            <option value="altro">Altro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="messaggio">Il tuo messaggio</label>
+                        <textarea id="messaggio" name="messaggio" placeholder="Condividi le tue riflessioni, domande o presentati alla comunità..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Invia Messaggio</button>
+                </form>
+            </section>
+
+            <section class="cta">
+                <h2>Unisciti a Noi</h2>
+                <p>Se risuona in te il desiderio di vivere con saggezza felina, serenità viandante e forza protettiva, ti invitiamo a unirti a noi nella Chiesa della Contemplazione Autonoma.</p>
+                
+                <div class="quote">
+                    Osserva, Accogli, Proteggi: Questo è il cammino verso una vita più contemplativa, autentica e libera.
+                </div>
+
+                <p>Che la Quiete ti guidi, la Serenità ti sostenga e la Forza ti difenda.</p>
+
+                <h3>Una Disorganizzazione Religiosa</h3>
+                <p>La Chiesa della Contemplazione Autonoma non è un'istituzione rigida, ma una <strong>disorganizzazione religiosa</strong>, un mosaico caotico e creativo di tradizioni, pensieri, pratiche spirituali e devozioni personali. Non cerchiamo seguaci da irreggimentare, ma anime da liberare: dal frastuono incessante del mondo, dalla frenesia che consuma, dalle nevrosi quotidiane, dalle catene delle convenzioni moderne.</p>
+
+                <p>Ci rivolgiamo agli spiriti liberi che danzano al ritmo del proprio cuore, ai pensatori critici che scrutano il mondo con occhi curiosi, ai contemplativi eccentrici che trovano saggezza nei momenti di silenzio, agli osservatori silenziosi che vedono ciò che altri ignorano, e ai ribelli ironici che sfidano le norme con un sorriso.</p>
+
+                <p>Se ti senti un gatto che osserva il caos dall'alto, un viandante che cammina con serenità, o un custode pronto a difendere il tuo spazio interiore, la CCA è il tuo rifugio. Unisciti a noi per contemplare, accettare e proteggere, con un pizzico di ironia e un cuore autonomo.</p>
+
+                <div class="quote">
+                    È una congrega di pensiero lucido camuffata da movimento spirituale, con lo scopo di ricordare a tutti che il silenzio, il riposo e l'autenticità non sono un fallimento, ma una forma di rivoluzione personale. La Contemplazione Autonoma è questo: uno sguardo fermo, un respiro profondo e una tazza di caffè fumante mentre il mondo corre da solo.
+                </div>
+            </section>
+        </main>
+
+        <div class="footer">
+            <p>&copy; 2025 Chiesa della Contemplazione Autonoma - Una disorganizzazione religiosa per spiriti liberi</p>
+        </div>
+
+        <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
+    </div>
+
+    <script>
+        // Back to top button
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }        }
+
+        // Netlify Identity redirect
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                        document.location.href = "/admin/";
+                    });
+                }
+            });
+        }
+    </script>
+</body>
+</html>
