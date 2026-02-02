@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronache della Contemplazione - CDCA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://i.imgur.com/xfA64gs.png" alt="Logo CDCA" />
+                </div>
+                <div class="header-text">
+                    <h1>Cronache della Contemplazione</h1>
+                    <p class="subtitle">Approfondimenti, Pensieri e Aggiornamenti</p>
+                </div>
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gattismo.html">Il Gattismo</a></li>
+                <li><a href="dudeismo.html">Il Dudeismo</a></li>
+                <li><a href="satanismo-intro.html">Satanismo LaVeyano</a></li>
+                <li><a href="tappeto.html">L'Angolo del Tappeto</a></li>
+                <li><a href="blog.html" class="active">Blog & News</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section>
+                <h2>Lo Spazio dell'Approfondimento</h2>
+                <p>Mentre questo sito rappresenta i pilastri immobili della nostra filosofia, le <strong>Cronache</strong> sono il nostro diario in divenire. Qui pubblichiamo riflessioni sulla vita quotidiana, commenti sull'attualità visti attraverso i "Tre Sguardi" e aggiornamenti sulla comunità.</p>
+                
+                <div class="quote">
+                    "La staticità è nel principio, il movimento è nel pensiero."
+                </div>
+
+                <p>Per garantire una lettura fluida e la possibilità di ricevere gli articoli direttamente nella tua email, abbiamo scelto di ospitare il nostro blog su una piattaforma dedicata esterna.</p>
+                
+                <div style="text-align: center; margin-top: 3rem;">
+                    <!-- Sostituisci l'URL sotto con il tuo link Substack o altro -->
+                    <a href="https://tuonome.substack.com" target="_blank" class="cta-button">
+                        Vai alle Cronache su Substack
+                    </a>
+                    <p style="font-size: 0.9rem; margin-top: 1rem; color: #7f8c8d;">
+                        (Si apre in una nuova scheda)
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <div class="footer">
+            <p>&copy; 2025 Chiesa della Contemplazione Autonoma</p>
+        </div>
+    </div>
+</body>
+</html>
+
+/* Stile Bottone Blog */
+.cta-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white !important;
+    padding: 1.2rem 2.5rem;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
