@@ -7,188 +7,349 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Il Gattismo: filosofia felina per la contemplazione autonoma. Scopri i 5 Pilastri, le 8 Regole e le pratiche quotidiane per vivere con la saggezza di un gatto.">
-    <meta name="keywords" content="gattismo, filosofia felina, contemplazione, economia dell'energia, quiete, saggezza del gatto">
+    <meta name="keywords" content="gattismo, filosofia felina, contemplazione, mindfulness, economia dell'energia, osservazione, quiete, saggezza del gatto">
     <meta name="author" content="Chiesa della Contemplazione Autonoma">
+    <meta name="robots" content="index, follow">
     
-    <!-- Link allo stile universale -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Il Gattismo - Chiesa della Contemplazione Autonoma">
+    <meta property="og:description" content="La filosofia felina per una vita contemplativa: 5 Pilastri, 8 Regole e pratiche quotidiane per l'economia dell'energia e l'osservazione attenta.">
+    <meta property="og:image" content="https://i.imgur.com/byWGXq1.png">
+    <meta property="og:type" content="article">
 
     <!-- Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>   
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #3498db05, #2980b905);
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-style: italic;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        nav li {
+            margin: 0 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 4rem 0;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .page-header::before {
+            content: '🐱';
+            font-size: 8rem;
+            position: absolute;
+            top: 20px;
+            right: 5%;
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header .motto {
+            font-size: 1.3rem;
+            color: #5a6c7d;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 1rem auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-header .description {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 2rem 2rem;
+        }
+
+        section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            margin: 0.5rem auto;
+            border-radius: 2px;
+        }
+
+        section h3 {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin: 2rem 0 1rem 0;
+            border-left: 4px solid #3498db;
+            padding-left: 1rem;
+        }
+
+        section h4 {
+            font-size: 1.2rem;
+            color: #34495e;
+            margin: 1.5rem 0 0.5rem 0;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .intro {
+            background: linear-gradient(135deg, #667eea20, #764ba220);
+            border-left: 4px solid #667eea;
+        }
+
+        .pillar-section {
+            background: linear-gradient(135deg, #3498db10, #2980b910);
+            border-left: 4px solid #3498db;
+        }
+
+        .rules-section {
+            background: linear-gradient(135deg, #2ecc7110, #27ae6010);
+            border-left: 4px solid #2ecc71;
+        }
+
+        .sins-section {
+            background: linear-gradient(135deg, #e74c3c10, #c0392b10);
+            border-left: 4px solid #e74c3c;
+        }
+
+        .practices-section {
+            background: linear-gradient(135deg, #f39c1210, #e67e2210);
+            border-left: 4px solid #f39c12;
+        }
+
+        .pillar-box {
+            background: linear-gradient(135deg, #3498db08, #2980b908);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .pillar-motto {
+            font-weight: bold;
+            color: #3498db;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+
+        .rule-item {
+            background: linear-gradient(135deg, #2ecc7108, #27ae6008);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            border-left: 4px solid #2ecc71;
+        }
+
+        .rule-motto {
+            font-weight: bold;
+            color: #2ecc71;
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .sin-item {
+            background: linear-gradient(135deg, #e74c3c08, #c0392b05);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .practice-box {
+            background: linear-gradient(135deg, #f39c1208, #e6782008);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            border-left: 3px solid #f39c12;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.1rem;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: rgba(52, 73, 94, 0.05);
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #a8edea20, #fed6e320);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .toto-quote {
+            background: linear-gradient(135deg, #f39c1220, #e67e2220);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+            border-left: 4px solid #f39c12;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            .page-header h1 { font-size: 2.2rem; }
+            nav ul { flex-direction: column; text-align: center; }
+            nav li { margin: 0.2rem 0; }
+            main { padding: 0 1rem 1rem 1rem; }
+            section { padding: 1.5rem; }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="header-content">
-                <div class="logo">
-                    <img src="https://i.imgur.com/xfA64gs.png" alt="Logo CDCA" />
-                </div>
-                <div class="header-text">
-                    <h1>Chiesa della Contemplazione Autonoma</h1>
-                    <p class="subtitle">Osserva, Accogli, Proteggi</p>
-                </div>
-            </div>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gattismo.html" class="active">Il Gattismo</a></li>
-                <li><a href="dudeismo.html">Il Dudeismo</a></li>
-                <li><a href="satanismo-intro.html">Satanismo LaVeyano</a></li>
-                <li><a href="tappeto.html">L'Angolo del Tappeto</a></li>
-            </ul>
-        </nav>
-
-        <div class="page-header">
-            <h1>🐱 Il Gattismo</h1>
-            <p class="motto">Un'Arte di Vivere Ispirata alla Saggezza Felina</p>
-            <p class="description">Osserva come un gatto. Conserva la tua energia. Agisci solo quando conta.</p>
-        </div>
-
-        <main>
-            <section class="intro">
-                <h2>La Via del Gatto: Un'Introduzione</h2>
-                <p>Hai mai osservato un gatto mentre riposa su un davanzale inondato di sole, con gli occhi socchiusi in uno stato di beatitudine perfetta? Benvenuto nel mondo del Gattismo, la filosofia fondante della Chiesa della Contemplazione Autonoma (CCA).</p>
-                <p>In un'epoca dominata dalla produttività ossessiva, i gatti ci sussurrano una verità semplice: <strong>la vera saggezza sta nel saper scegliere quando riposare e quando agire.</strong></p>
-                
-                <div class="highlight">
-                    <p>Un gatto non si preoccupa di rispondere a email a tarda notte, non si angoscia per i like sui social media, né sacrifica il proprio benessere sull'altare di aspettative esterne.</p>
-                </div>
-            </section>
-
-            <section class="pillar-section">
-                <h2>I Cinque Pilastri del Gattismo</h2>
-                <p>Il "Codice del Gatto Saggio" raccoglie i principi fondamentali per navigare la vita con eleganza felina:</p>
-
-                <div class="pillar-box">
-                    <h4>1. "Non stare sveglio se puoi dormire"</h4>
-                    <p class="pillar-motto">"Il sonno è il nutrimento dell'anima"</p>
-                    <p>I gatti dedicano fino a 16-20 ore al giorno al sonno. Non è pigrizia, ma saggezza biologica. Il Gattismo onora il riposo come momento sacro di rigenerazione.</p>
-                </div>
-
-                <div class="pillar-box">
-                    <h4>2. "Non stare seduto se puoi sdraiarti"</h4>
-                    <p class="pillar-motto">"L'orizzontale è lo stato naturale della contemplazione"</p>
-                    <p>Sdraiarsi è un atto di resistenza contro la postura sempre "pronta all'azione" che la società ci impone. Connettiti con la terra e con la tua essenza.</p>
-                </div>
-
-                <div class="pillar-box">
-                    <h4>3. "Non stare in piedi se puoi stare seduto"</h4>
-                    <p class="pillar-motto">"La verticalità è una condizione temporanea"</h4>
-                    <p>La posizione eretta richiede sforzo costante. Il Gattismo ci invita a abitare uno spazio senza la tensione di dover correre verso la prossima destinazione.</p>
-                </div>
-
-                <div class="pillar-box">
-                    <h4>4. "Non camminare se puoi stare fermo"</h4>
-                    <p class="pillar-motto">"Nell'immobilità attenta risiede il potere dell'osservazione"</h4>
-                    <p>L'immobilità consapevole è vigilanza rilassata. Osserva senza giudicare, assorbi il mondo senza reagire.</p>
-                </div>
-
-                <div class="pillar-box">
-                    <h4>5. "Non correre se puoi camminare"</h4>
-                    <p class="pillar-motto">"La fretta è nemica della grazia"</h4>
-                    <p>La lentezza deliberata permette di vivere pienamente ogni passo. Accelerare solo quando la situazione lo richiede veramente.</p>
-                </div>
-            </section>
-
-            <section class="rules-section">
-                <h2>Le Otto Regole del Gattismo</h2>
-                <div class="rule-item">
-                    <h4>1. Conserva l'energia</h4>
-                    <p class="rule-motto">"Un gatto non spreca mai un salto"</p>
-                    <p>Identifica ciò che realmente merita la tua energia. Concentra le tue risorse sui salti che contano davvero.</p>
-                </div>
-                <div class="rule-item">
-                    <h4>2. Proteggi il tuo spazio personale</h4>
-                    <p class="rule-motto">"Ogni gatto ha il suo davanzale"</p>
-                    <p>Crea un territorio di comfort fisico e mentale. Proteggilo da invasioni digitali e interruzioni.</p>
-                </div>
-                <div class="rule-item">
-                    <h4>3. Filtra il rumore del mondo</h4>
-                    <p class="rule-motto">"Le orecchie del gatto ascoltano solo l'essenziale"</p>
-                    <p>Pratica il digiuno informativo. Spegni le notifiche. Distingui tra informazioni vitali e rumore di fondo.</p>
-                </div>
-                <div class="rule-item">
-                    <h4>4. Scegli le tue compagnie</h4>
-                    <p class="rule-motto">"L'affetto di un gatto non è mai casuale"</p>
-                    <p>Coltiva relazioni che nutrono l'anima e lascia andare quelle che ti prosciugano.</p>
-                </div>
-                <div class="rule-item">
-                    <h4>5. Difendi i tuoi confini</h4>
-                    <p class="rule-motto">"Gli artigli sono l'ultima risorsa, ma disponibili"</p>
-                    <p>Comunica i tuoi limiti con chiarezza. Proteggere il proprio benessere non è egoismo.</p>
-                </div>
-                <div class="rule-item">
-                    <h4>6. Ascolta i ritmi del corpo</h4>
-                    <p class="rule-motto">"Un gatto non mangia per noia"</p>
-                    <p>Mangia quando hai fame, riposa quando sei stanco. Onora i segnali biologici.</p>
-                </div>
-                <div class="rule-item">
-                    <h4>7. Osserva prima di agire</h4>
-                    <p class="rule-motto">"Gli occhi del gatto vedono oltre la fretta"</p>
-                    <p>Prima di rispondere emotivamente, prenditi una pausa felina. Respira, osserva, considera.</p>
-                </div>
-                <div class="rule-item">
-                    <h4>8. Lascia un'impronta leggera</h4>
-                    <p class="rule-motto">"Le zampe non disturbano la polvere"</p>
-                    <p>Vivi con eleganza. Sii presente senza dominare, esprimi te stesso senza imporre.</p>
-                </div>
-            </section>
-
-            <section class="sins-section">
-                <h2>I Peccati: Caratteristiche da Trasformare</h2>
-                <div class="sin-item">
-                    <h4>1. La Frenesia dell'Azione Perpetua</h4>
-                    <p>L'agitazione costante è la negazione della presenza. Trasformala nel "non-fare" come atto rivoluzionario.</p>
-                </div>
-                <div class="sin-item">
-                    <h4>2. La Distrazione Reattiva</h4>
-                    <p>Chi rincorre ogni stimolo perde l'essenziale. Crea periodi di "modalità gatto" senza dispositivi.</p>
-                </div>
-                <div class="sin-item">
-                    <h4>3. La Disconnessione dal Corpo</h4>
-                    <p>Ignorare la stanchezza è ignorare la propria natura. Pratica la scansione felina dei tuoi bisogni.</p>
-                </div>
-            </section>
-
-            <section class="practices-section">
-                <h2>Pratiche Quotidiane</h2>
-                <div class="practice-box">
-                    <h4>🐱 Il Momento del Davanzale</h4>
-                    <p>10 minuti al giorno seduto in silenzio davanti a una finestra. Osserva senza giudicare.</p>
-                </div>
-                <div class="practice-box">
-                    <h4>🐱 La Posizione del Gatto Soddisfatto</h4>
-                    <p>Sdraiati completamente e allunga il corpo. Senti i muscoli rilassarsi e lascia andare la tensione.</p>
-                </div>
-            </section>
-
-            <section class="response-section">
-                <h2>Il Gattismo contro la Modernità</h2>
-                <div class="toto-quote">
-                    <p>Il grande Totò dice: <em>"Uomini di genere maschile! Contro il logorio della vita moderna! Fate come me!!! Soffittizzatevi!!!"</em></p>
-                    <p style="margin-top: 1rem; font-weight: bold;">Noi diciamo: "Gattizzatevi!!!"</p>
-                </div>
-                <p>Il Gattismo non è pigrizia, ma intelligenza. È il pilastro "Osserva" della nostra Chiesa. Senza la quiete contemplativa del gatto, non possiamo né accogliere con serenità né proteggere con saggezza.</p>
-            </section>
-        </main>
-
-        <div class="footer">
-            <p>&copy; 2025 Chiesa della Contemplazione Autonoma - Osserva, Accogli, Proteggi</p>
-        </div>
-
-        <button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
-    </div>
-
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
-                }
-            });
-        }
-    </script>
-</body>
-</html>
