@@ -12,10 +12,11 @@
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph Tags -->
+    <!-- FIX: URL aggiornato al dominio Vercel corretto -->
     <meta property="og:title" content="Chiesa della Contemplazione Autonoma">
     <meta property="og:description" content="Filosofia di vita contemplativa: Gattismo, Dudeismo e autodifesa consapevole per un'esistenza autonoma e autentica.">
     <meta property="og:image" content="https://i.imgur.com/xfA64gs.png">
-    <meta property="og:url" content="https://benevolent-starburst-aacb2d.netlify.app">
+    <meta property="og:url" content="https://chiesacontemplazioneautonoma.vercel.app">
     <meta property="og:type" content="website">
     
     <!-- Twitter Card -->
@@ -25,20 +26,20 @@
     <meta name="twitter:image" content="https://i.imgur.com/xfA64gs.png">
     
     <!-- Schema Markup -->
+    <!-- FIX: URL aggiornato al dominio Vercel corretto -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Chiesa della Contemplazione Autonoma",
         "description": "Filosofia contemplativa che integra Gattismo, Dudeismo e principi di autodifesa consapevole",
-        "url": "https://benevolent-starburst-aacb2d.netlify.app",
+        "url": "https://chiesacontemplazioneautonoma.vercel.app",
         "logo": "https://i.imgur.com/xfA64gs.png",
         "slogan": "Osserva, Accogli, Proteggi"
     }
     </script>
 
-    <!-- Netlify Identity Widget -->
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- FIX: Rimosso script Netlify Identity Widget (inutile su Vercel e rallentava la pagina) -->
 
     <style>
         * {
@@ -131,6 +132,7 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
+        /* FIX: Corretto il markup della navigazione — era rotto con un </ul> prematuro */
         nav ul {
             list-style: none;
             display: flex;
@@ -506,13 +508,14 @@
             </div>
         </header>
 
-         <nav>
+        <!-- FIX: Corretta la struttura della navigazione (il </ul> era prematuro, lasciando il link Blog fuori dalla lista) -->
+        <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="gattismo.html">Il Gattismo</a></li>
                 <li><a href="dudeismo.html">Il Dudeismo</a></li>
                 <li><a href="satanismo-intro.html">Satanismo LaVeyano</a></li>
-                <li><a href="tappeto.html">L'Angolo del Tappeto</a></li> </ul>
+                <li><a href="tappeto.html">L'Angolo del Tappeto</a></li>
                 <li><a href="blog.html">Blog & News (i bollettini contemplativi)</a></li>
             </ul>
         </nav>
@@ -616,7 +619,7 @@
                         <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
                             <div style="font-size: 2rem; margin-bottom: 0.5rem;">✉️</div>
                             <h4 style="margin-bottom: 0.5rem;">Email</h4>
-                            <a href="mailto:chiesacontemplazioneautonoma@gmail.com" style="color: #3498db; text-decoration: none; font-size: 1.1rem;">chiesacontamplazioneautonoma@gmail.com</a>
+                            <a href="mailto:chiesacontemplazioneautonoma@gmail.com" style="color: #3498db; text-decoration: none; font-size: 1.1rem;">chiesacontemplazioneautonoma@gmail.com</a>
                         </div>
                         
                         <div style="text-align: center; padding: 1.5rem; background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
@@ -662,29 +665,23 @@
         <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
     </div>
 
+    <!-- FIX: Rimossa la parentesi graffa di troppo che causava un errore JS -->
     <script>
-        // Back to top button
         function scrollToTop() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
-        }        }
-
-        // Netlify Identity redirect
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
         }
+
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
     </script>
 </body>
 </html>
-
-
-
-
