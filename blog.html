@@ -5,6 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cronache della Contemplazione - CDCA</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- FIX: Spostato il CSS del bottone qui dentro, era finito fuori dal </html> -->
+    <style>
+        /* Stile Bottone Blog */
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white !important;
+            padding: 1.2rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: transform 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+
+        .substack-wrapper {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .substack-wrapper iframe {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -42,14 +75,23 @@
 
                 <p>Per garantire una lettura fluida e la possibilità di ricevere gli articoli direttamente nella tua email, abbiamo scelto di ospitare il nostro blog su una piattaforma dedicata esterna.</p>
                 
-                <div style="text-align: center; margin-top: 3rem;">
-                    <!-- Sostituisci l'URL sotto con il tuo link Substack o altro -->
-                    <a href="https://tuonome.substack.com" target="_blank" class="cta-button">
+                <!-- Pulsante link a Substack -->
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://lecronachecontemplative.substack.com" target="_blank" class="cta-button">
                         Vai alle Cronache su Substack
                     </a>
                     <p style="font-size: 0.9rem; margin-top: 1rem; color: #7f8c8d;">
                         (Si apre in una nuova scheda)
                     </p>
+                </div>
+
+                <!-- Form iscrizione Substack -->
+                <div style="margin-top: 3rem; text-align: center;">
+                    <h3 style="margin-bottom: 1rem; color: #2c3e50;">📬 Iscriviti alle Cronache</h3>
+                    <p style="margin-bottom: 1.5rem; color: #5a6c7d;">Ricevi i nuovi articoli direttamente nella tua email. Con la calma di un gatto — niente spam, solo contemplazione.</p>
+                    <div class="substack-wrapper">
+                        <iframe src="https://lecronachecontemplative.substack.com/embed" width="480" height="320" style="border: 1px solid #EEE; background: white" frameborder="0" scrolling="no"></iframe>
+                    </div>
                 </div>
             </section>
         </main>
@@ -60,23 +102,3 @@
     </div>
 </body>
 </html>
-
-/* Stile Bottone Blog */
-.cta-button {
-    display: inline-block;
-    background-color: #3498db;
-    color: white !important;
-    padding: 1.2rem 2.5rem;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 1.3rem;
-    transition: transform 0.3s, background-color 0.3s;
-    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-}
-
-.cta-button:hover {
-    background-color: #2980b9;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
-}
